@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="Html5TemplatesDreamweaver.com">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"> <!-- Remove this Robots Meta Tag, to allow indexing of site -->
 
         <link href="scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="scripts/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -27,8 +28,10 @@
             <link rel="stylesheet" href="scripts/fontawesome/css/font-awesome-ie7.min.css">
         <![endif]-->
 
-        <link href="scripts/wookmark/css/style.css" rel="stylesheet" type="text/css" />	<link href="scripts/yoxview/yoxview.css" rel="stylesheet" type="text/css" />
-        <link href="http://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet" type="text/css">
+        <link href="scripts/carousel/style.css" rel="stylesheet" type="text/css" />
+        <link href="scripts/camera/css/camera.css" rel="stylesheet" type="text/css" />
+
+
         <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
@@ -36,7 +39,6 @@
         <link href="http://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
 
         <link href="styles/custom.css" rel="stylesheet" type="text/css" />
-        <script src="email/validation.js" type="text/javascript"></script>
     </head>
     <body id="pageBody">
 
@@ -48,7 +50,7 @@
                 <div class="row-fluid">
                     <div class="span12">
 
-                       <div id="divLogo" class="pull-left">
+                        <div id="divLogo" class="pull-left">
                             <a href="index.html" id="divSiteTitle" style="text-transform:none;font-family:Tahoma;font-size:40px">OpenMalo</a><br />
                             <a href="index.html" id="divTagLine" style="font-family:Tahoma;font-size:10px">Passion|Quality|Delivery</a>
                         </div>
@@ -60,11 +62,11 @@
                                 </button>
                                 <div class="nav-collapse collapse">
                                     <ul class="nav nav-pills ddmenu">
-                                        <li><a href="index.html">Home</a></li>
+                                        <li class="active"><a href="index.html">Home</a></li>
                                         <li><a href="about.html">About</a></li>
                                         <li class="dropdown">
                                             <a href="page.html" class="dropdown-toggle">Page <b class="caret"></b></a>
-                                            <ul class="dropdown-menu">                            
+                                            <ul class="dropdown-menu">
                                                 <li><a href="full.html">Full Page</a></li>
                                                 <li><a href="2-column.html">Two Column</a></li>
                                                 <li><a href="3-column.html">Three Column</a></li>
@@ -80,8 +82,8 @@
                                             </ul>
                                         </li>
                                         <li><a href="services.html">Services</a></li>
-                                        <li><a href="portfolio.html">Portfolio</a></li>						    
-                                        <li class="active"><a href="contact.html">Contact</a></li>
+                                        <li><a href="portfolio.html">Portfolio</a></li>
+                                        <li><a href="contact.php">Contact</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -92,7 +94,20 @@
 
                 <div class="row-fluid">
                     <div class="span12">
-                        <div id="contentInnerSeparator"></div>
+
+                        <div id="headerSeparator"></div>
+
+                        <div class="camera_full_width">
+                            <div id="camera_wrap">
+                                <div data-src="slider-images/4.jpg" ><div class="camera_caption fadeFromBottom cap1">RELIABLE PERTNER FOR ALL IT NEEDS...</div></div>
+                                <div data-src="slider-images/1.jpg" ><div class="camera_caption fadeFromBottom cap2">ADD A SLOGAN OR FEATURE HERE...</div></div>
+                                <div data-src="slider-images/2.jpg" ></div>
+                            </div>
+                            <br style="clear:both"/><div style="margin-bottom:40px"></div>
+                        </div>               
+
+                        <div id="headerSeparator2"></div>
+
                     </div>
                 </div>
             </div>
@@ -101,16 +116,13 @@
 
                 <div class="divPanel notop page-content">
 
-                    <div class="breadcrumbs">
-                        <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Contact</span>
-                    </div>
 
                     <div class="row-fluid">
                         <div class="span8" id="divMain">
 
                             <h1>Contact Us</h1>
                             <h3 style="color:#FF6633;"><?php echo @$_GET['msg']; ?></h3>
-                            <hr>
+                           
                             <!--Start Contact form -->		                                                
                             <form name="enq" method="post" action="email/" onsubmit="return validation();">
                                 <fieldset>
@@ -160,8 +172,7 @@
                         </div>
                         <!--/End Sidebar Content-->
 
-
-                    </div>			
+                    </div>
 
                     <div id="footerInnerSeparator"></div>
                 </div>
@@ -210,10 +221,8 @@
                         </div>
                         <div class="span3" id="footerArea3">
 
-                            <h3>Sample Content</h3> 
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s. 
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.
-                            </p>
+                            <h3>API Integrations</h3> 
+                            <p></p>
 
                         </div>
                         <div class="span3" id="footerArea4">
@@ -225,21 +234,21 @@
                                     <i class="general foundicon-phone icon"></i>
                                     <span class="field">Phone:</span>
                                     <br />
-                                    (123) 456 7890 / 456 7891                                                                      
+                                    +1 323 473 3078 | +91 84 60 387 387
                                 </li>
                                 <li>
                                     <i class="general foundicon-mail icon"></i>
                                     <span class="field">Email:</span>
                                     <br />
-                                    <a href="mailto:info@yourdomain.com" title="Email">info@yourdomain.com</a>
+                                    <a href="mailto:info@yourdomain.com" title="Email">info@openmalo.com</a>
                                 </li>
                                 <li>
                                     <i class="general foundicon-home icon" style="margin-bottom:50px"></i>
                                     <span class="field">Address:</span>
                                     <br />
-                                    123 Street<br />
-                                    12345 City, State<br />
-                                    Country
+                                    608, Star Chambers<br />
+                                    Rajkot, Gujarat<br />
+                                    India
                                 </li>
                             </ul>
 
@@ -250,7 +259,7 @@
                     <div class="row-fluid">
                         <div class="span12">
                             <p class="copyright">
-                                Copyright © 2013 Your Company. All Rights Reserved.
+                                Copyright © 2015 Your Company. All Rights Reserved.
                             </p>
 
                             <p class="social_bookmarks">
@@ -271,11 +280,10 @@
         <script src="scripts/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="scripts/default.js" type="text/javascript"></script>
 
-        <script src="scripts/wookmark/js/jquery.wookmark.js" type="text/javascript"></script>
-        <script type="text/javascript">$(window).load(function () {var options = {autoResize: true,container: $('#gridArea'),offset: 10};var handler = $('#tiles li');handler.wookmark(options);$('#tiles li').each(function () { var imgm = 0; if($(this).find('img').length>0)imgm=parseInt($(this).find('img').not('p img').css('margin-bottom')); var newHeight = $(this).find('img').height() + imgm + $(this).find('div').height() + $(this).find('h4').height() + $(this).find('p').not('blockquote p').height() + $(this).find('iframe').height() + $(this).find('blockquote').height() + 5;if($(this).find('iframe').height()) newHeight = newHeight+15;$(this).css('height', newHeight + 'px');});handler.wookmark(options);handler.wookmark(options);});</script>
-        <script src="scripts/yoxview/yox.js" type="text/javascript"></script>
-        <script src="scripts/yoxview/jquery.yoxview-2.21.js" type="text/javascript"></script>
-        <script type="text/javascript">$(document).ready(function () {$('.yoxview').yoxview({autoHideInfo:false,renderInfoPin:false,backgroundColor:'#ffffff',backgroundOpacity:0.8,infoBackColor:'#000000',infoBackOpacity:1});$('.yoxview a img').hover(function(){$(this).animate({opacity:0.7},300)},function(){$(this).animate({opacity:1},300)});});</script>
+
+        <script src="scripts/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script><script type="text/javascript">$('#list_photos').carouFredSel({ responsive: true, width: '100%', scroll: 2, items: {width: 320,visible: {min: 2, max: 6}} });</script><script src="scripts/camera/scripts/camera.min.js" type="text/javascript"></script>
+        <script src="scripts/easing/jquery.easing.1.3.js" type="text/javascript"></script>
+        <script type="text/javascript">function startCamera() {$('#camera_wrap').camera({ fx: 'scrollLeft', time: 2000, loader: 'none', playPause: false, navigation: true, height: '35%', pagination: true });}$(function(){startCamera()});</script>
 
 
     </body>

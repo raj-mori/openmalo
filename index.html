@@ -119,7 +119,7 @@
 
             <div class="row-fluid">
             <!--Edit Main Content Area here-->
-                <div class="span12" id="divMain">
+                <div class="span8" id="divMain">
                     <h1>Who We are</h1>
 					<p>
 We are the leading provider of open source solutions for small and medium businesses around the world. Our engagements range from complete system implementations on a LAMP stack including post-production support through state-of-the-art monitoring centers to performance tuning of a PostgreSQL database.
@@ -222,6 +222,34 @@ We are very cognizant that our business would not be possible without the tirele
 
                 </div>
             <!--End Main Content-->
+           <div class="span4 sidebar">
+
+                            <div class="sidebox" style="margin-top:50px;">
+                                <h3 class="sidebox-title">Contact Information</h3>
+                                
+                            <h3 style="color:#FF6633;"><?php echo @$_GET['msg']; ?></h3>
+                          
+                            <!--Start Contact form -->		                                                
+                            <form name="enq" method="post" action="" onsubmit="return validation();">
+                                <fieldset>
+
+                                    <input type="text" name="name" id="name" value=""  class="input-block-level" placeholder="Name" />
+                                    <input type="text" name="email" id="email" value="" class="input-block-level" placeholder="Email" />
+                                    <textarea rows="7" name="message" id="message" class="input-block-level" placeholder="Comments"></textarea>
+                                    </br></br></br>
+                                    <div class="actions">
+                                        <input type="submit" value="Send Your Message" name="submit" id="submitButton" class="btn btn-info pull-right" title="Click here to submit your message!" />
+                                    </div>
+
+                                </fieldset>
+                            </form>  		
+
+                            </div>
+
+
+
+                        </div>
+                        <!--/End Sidebar Content-->
             </div>
 
             <div id="footerInnerSeparator"></div>
